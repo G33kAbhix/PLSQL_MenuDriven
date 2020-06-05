@@ -69,7 +69,7 @@ WHERE s.s_city IN ('Burdwan', 'Asansol') AND sp.project = 'Housing';
 SELECT
   s1.s_name,
   s2.s_name
-FROM s s1 LEFT OUTER JOIN s s2
+FROM s s1 INNER JOIN s s2
   ON s1.s_city = s2.s_city
 WHERE s1.s_no <> s2.s_no;
 
